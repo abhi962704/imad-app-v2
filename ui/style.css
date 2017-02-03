@@ -16,6 +16,9 @@ body {
     align-items:center;
     display:flex;
 }
+h2{
+ color:RGB(174,222,182) ;
+}
 
 .center {
     text-align: center;
