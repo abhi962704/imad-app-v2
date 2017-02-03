@@ -8,7 +8,7 @@ html,body {
 }
 body {
     font-family: 'IndieFlower',cursive;
-    background-color: #FFF;
+    background-color: RGB(22,74,64);
     margin-top: 75px;
     text-shadow:4px 4px 4px #aaa;
     overflow:hidden;
