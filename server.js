@@ -16,7 +16,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','madi.png'));
 });
-document.querySelector('html').onclick = function() {
+document.querySelector('ui/index.html').onclick = function() {
     alert('Ouch! Stop poking me!');
 };
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
