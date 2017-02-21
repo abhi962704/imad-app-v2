@@ -1,4 +1,4 @@
 console.log('Loaded!');
-document.querySelector('html').onclick = function() {
+document.querySelector('index.html').onclick = function() {
     alert('Ouch! Stop poking me!');
 };
