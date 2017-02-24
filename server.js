@@ -12,7 +12,9 @@ app.get('/', function (req, res) {
 app.get('/ui/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css'));
 });
-
+app.get('/ui/bootstrap-theme.css',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','bootstrap-theme.css'));
+});
 app.get('/ui/electric-guitar.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','electric-guitar.jpg'));
 });
