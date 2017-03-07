@@ -1,7 +1,6 @@
 .img-responsive {
     background-image:url(/ui/pencil-HD.jpg);
-    background-size:cover;
-    background-size: contain;
+    background-size:cover,contain;
 }
 
 
