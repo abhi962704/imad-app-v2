@@ -1,6 +1,6 @@
 console.log("loaded");
 $(document).ready(function(){
     $("h1").click(function(){
-    $(this).toggle(slow);
+    $(this).hide(60);
     });
 });
