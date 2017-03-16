@@ -66,7 +66,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="ny.jpg" alt="New York">
+      <img src="http://placehild.it/400×200" alt="New York">
       <div class="carousel-caption">
         <h3>New York</h3>
         <p>The atmosphere in New York is lorem ipsum.</p>
@@ -253,7 +253,18 @@
     </div>
   </div>
 </div>
-
+<!-- Add Google Maps -->
+<div id="googleMap"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     
     <!--my modified javascript -->
      <script src="/ui/main.js" type="text/javascript"></script>
