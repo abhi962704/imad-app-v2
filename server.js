@@ -15,15 +15,12 @@ app.get('/ui/user.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'user.html'));
 
 });
-
-
 app.get('/ui/ticket.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ticket.html'));
 });
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
 
 app.get('/ui/forest.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'forest.jpg'));
