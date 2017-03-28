@@ -1,9 +1,17 @@
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      margin-bottom: 50;
-      border-radius: 0;
-      font-family: 'Cinzel', serif;
-      background-color:#1e1e1e;
+        padding-top:15px;
+        padding-bottom:15px;
+        border: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        font-family: 'Cinzel', serif;
+        background-color:#1e1e1e;
+        font-size:12px;
+        letter-spacing:5px;
+    }
+    .navbar-nav li a:hover {
+        color:#1abc9c !important;
     }
     footer {
         background-color:#555;
