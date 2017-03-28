@@ -18,3 +18,20 @@
         color:white;
         padding:15px;
     }
+    .container-fluid {
+        padding:60px,50px;
+    }
+    .bg-grey {
+        background-color:#f6f6f6;
+    }
+    .slideanim {
+        visibility:hidden;
+    }
+    h2 { 
+        
+        font-size:24px;
+        text-transform:uppercase;
+        color:#303030;
+        font-weight:600;
+        margin-bottom:30px;
+    }
