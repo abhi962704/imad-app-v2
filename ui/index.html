@@ -1,59 +1,208 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <title>
-            hello world
-        </title>
-        
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-    </head>
-    <body>
-     
-     <div class="jumbotron text-center">
-         <h2>
-            Abhishek kumar gupta
-         </h2>
-         <p>
-             This i my first project
-             <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p> 
-<p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
-<p>Print icon: <a class="www.google.co.in"><span class="glyphicon glyphicon-print"></span></a></p>
-Try it Yourself »
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Band|Abhishek</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="">
+	<style>
+		.container {
+			padding: 80px,120px;
+		}
+	    .person {
+        border: 10px solid transparent;
+        margin-bottom: 25px;
+        width: 80%;
+        height: 80%;
+        opacity: 0.7;
+        }
+        .person:hover {
+        border-color: #f1f1f1;
+        }
+        .carousel-inner img {
+        	-webkit-filter: grayscale(90%);
+        	filter: grayscale(90%);/*makes all photos black and white */
+        	width: 100%;
+            margin: auto;
+        }
+        .carousel-caption h3 {
+        	color: #fff !important ;
+        }
+        @media (max-width: 600px) {
+        	.carousel-caption {
+        		display: none; /*Hide the carousel text when the screen width is less than 600 pixels wide */
+        	}
+        }
+        .bg-1 {
+            background: #2d2d30;
+            color: #bdbdbd;
+        }
+        .bg-1 h3 {
+        	color: #fff;
+        }
+        .bg-1 p {
+        	font-style: italic;
+        }
+        /* Remove rounded borders from list */
+        .list-group-item:first-child {
+             border-top-right-radius: 0;
+             border-top-left-radius: 0;
+        }
 
-                 
-             </div>
-     
-     <div class="container text-center">
-     <div class="row">
-         <div class="col-sm-4">
-             <p>
-                 roses are red<br>
-                 he is she<br>
-                 and nothing<br>
-             </p>
-         </div>
-         <div class="col-sm-4">
-             <p>
-                 roses are red<br>
-                 he is she<br>
-                 and nothing<br>
-             </p>
-         </div>
-         <div class="col-sm-4">
-             <p>
-                 roses are red<br>
-                 he is she<br>
-                 and nothing<br>
-             </p>
-         </div>
-     </div>   
-     </div>
-        
-    </body>
+        .list-group-item:last-child {
+             border-bottom-right-radius: 0;
+             border-bottom-left-radius: 0;
+        }
+        /* Remove border and add padding to thumbnails */
+        .thumbnail {
+             padding: 0 0 15px 0;
+             border: none;
+             border-radius: 0;
+        }
+
+        .thumbnail p {
+             margin-top: 15px;
+             color: #555;
+        }
+        /* Black buttons with extra padding and without rounded borders */
+        .btn {
+             padding: 10px 20px;
+             background-color: #333;
+             color: #f1f1f1;
+             border-radius: 0;
+             transition: .2s;
+        }
+
+        /* On hover, the color of .btn will transition to white with black text */
+        .btn:hover, .btn:focus {
+             border: 1px solid #333;
+             background-color: #fff;
+             color: #000;
+        }
+	</style>
+</head>
+<body>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	        <!-- Indicaors -->
+	        <ol class="carousel-indicators">
+		        <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+		        <li data-target="myCarousel" data-slide-to="1"></li>
+	            <li data-target="myCarousel" data-slide-to="2"></li>
+	        </ol>
+	        <!--Wrapper side for-->
+	        <div class="carousel-inner" role="listbox">
+	        	<div class="item active">
+	        		<img src="http://via.placeholder.com/1920x720" alt="placeholder">
+	        		<div class="carousel-caption">
+	        			 <h3>New York</h3>
+                         <p>The atmosphere in New York is lorem ipsum.</p>
+	        		</div>
+	        	</div>
+	        	<div class="item">
+	        		<img src="http://via.placeholder.com/1920x720" alt="placeholder">
+	        		<div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago - A night we won't forget.</p>
+                    </div>
+	        	</div>
+	        	<div class="item">
+	        		<img src="http://via.placeholder.com/1920x720" alt="placeholder">
+	        		<div class="carousel-caption">
+	        		    <h3>LA</h3>
+                        <p>Even though the traffic was a mess, we had the best time.</p>
+	        	    </div>
+	        	</div>
+	        </div>
+	        <!-- Right and left contrpls-->
+	        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            	<span class="sr-only">Next</span>
+            </a>
+    </div>
+	<div class="container text-center">
+		<h3>THE BAND</h3>
+		<P><em>We Love Music !</em></P>
+	    <p>We have created a fictional band website. Lorem ipsum..</p>
+	    <br>
+	    <div class="row">
+	    	<div class="col-sm-4">
+	    		<p><strong>NAME</strong></p><br>
+	    		<a href="#demo" data-toggle="collapse">
+	    	    <img src="http://via.placeholder.com/350x350" class="img-circle person" alt="placeholder">
+	    	    </a>
+	    	    <div id="demo" class="collapse">
+	    	    	 <p>Guitarist and Lead Vocalist</p>
+                     <p>Loves long walks on the beach</p>
+                     <p>Member since 1988</p>
+	    	    </div>
+	    	</div>
+	    	<div class="col-sm-4" >
+	    		<p><strong>NAME</strong></p><br>
+	    		<a href="#demo2" data-toggle="collapse">
+	    		<img src="http://via.placeholder.com/350x350" class="img-circle person" alt="placeholder">
+	    		</a>
+	    		<div id="demo2" class="collapse">
+	    			 <p>Drummer</p>
+                     <p>Loves drummin'</p>
+                     <p>Member since 1988</p>
+	    		</div>
+	    	</div>
+	    	<div class="col-sm-4">
+	    		<p><strong>NAME</strong></p><br>
+	    		<a href="#demo3" data-toggle="collapse">
+	    		<img src="http://via.placeholder.com/350x350" class="img-circle person" alt="placeholder">
+	    		</a>
+	    		<div id="demo3" class="collapse">
+	    			<p>Bass player</p>
+                    <p>Loves math</p>
+                    <p>Member since 2005</p>
+	    		</div>
+	   	    </div>
+	   	    </div>
+	</div>
+	<div class="bg-1">
+	    <div class="container">
+		    <h3 class="text-center">TOUR DATES</h3>
+		    <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+		    <ul class="list-group">
+			        <li class="list-group-item">September <span class="label label-danger">Sold Out !</span></li>
+			        <li class="list-group-item">October <span class="label label-danger">Sold Out !</span></li>
+			        <li class="list-group-item">November <span class="badge">3</span></li>
+			</ul>
+	    <div class="row text-center">
+	    	<div class="col-lg-4">
+	    		<div class="thumbnail">
+	    			<img src="http://via.placeholder.com/300x200" alt="paris photos" width="400" height="300">
+	    			<p><strong>Paris</strong></p>
+	    			<p>Fri. 27 November 2015</p>
+	    			<button class="btn">Buy Tickets !</button>
+	    		</div>
+	    	</div>
+	    	<div class="col-lg-4">
+	    		<div class="thumbnail">
+	    			<img src="http://via.placeholder.com/300x200" alt="san francisco" width="400" height="300">
+	    			<p><strong>San Francisco</strong></p>
+	    			<p>Sat. 28 October 2015</p>
+	    			<button class="btn">Buy Tickets !</button>
+	    		</div>
+	    	</div>
+	    	<div class="col-lg-4">
+	    	    <div class="thumbnail">
+	    	    	<img src="http://via.placeholder.com/300x200" alt="New York" width="400" height="300">
+	    	    	<p><strong>New York</strong></p>
+                    <p>Sun. 29 September 2015</p>
+                    <button class="btn">Sold Out !</button>
+	    	    </div>
+	    	</div>
+	    	</div>
+	    </div>
+	</div>
+</body>
 </html>
